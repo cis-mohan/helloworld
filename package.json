@@ -1,0 +1,31 @@
+{
+  "name":    "helloworld",
+  "version": "1.0.1",
+  "description": "A minimal Electron application",
+  "main":    "main.js",
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "build": {
+    "appId": "com.electron.helloworld",
+    "productName": "helloworld",
+    "asar": false,
+    "win": {
+        "iconUrl": "https://www.eagentplus.com/assets/avatar-1-64.png"
+    },
+    "squirrelWindows": {
+        "iconUrl": "https://www.eagentplus.com/assets/avatar-1-64.png"
+    }  
+  },
+  "scripts": {
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build",
+    "pack:win": "electron-packager . hellomohan  --platform win32 --arch x64 --out dist/"
+  },
+  "devDependencies": {
+    "electron": "^1.4.1",
+    "electron-packager": "^8.4.0"
+  }
+}
+
+
